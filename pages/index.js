@@ -9,7 +9,7 @@ export default function Index() {
       </Head>
 
       <main>
-        <h1>NO</h1>
+        <h1 className="text-center my-4 text-m">NO</h1>
       </main>
 
       <footer>
