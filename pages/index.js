@@ -61,7 +61,7 @@ export default function Index() {
           property="og:image:alt"
           content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
         />
-        <meta property="og:url" content="https://---.com" />
+        <meta property="og:url" content="https://puedosalirdecasa.fun" />
         <meta property="og:site_name" content="¿Puedo salir de casa?" />
         <meta property="og:locale" content="es" />
         <meta
@@ -77,8 +77,8 @@ export default function Index() {
         />
         <meta
           name="twitter:url"
-          value="https://-----.com"
-          content="https://-----.com"
+          value="https://puedosalirdecasa.fun"
+          content="https://puedosalirdecasa.fun"
         />
         <meta
           name="twitter:title"
@@ -92,8 +92,8 @@ export default function Index() {
         />
         <meta
           name="twitter:image"
-          value="https://-----.com/assets/img/desktop.png"
-          content="https://-----.com/assets/img/desktop.png"
+          value="https://puedosalirdecasa.fun/assets/img/-----.png"
+          content="https://puedosalirdecasa.fun/assets/img/-----.png"
         />
         <meta
           name="twitter:summary"
