@@ -6,7 +6,7 @@ export default function Index() {
   const fetcher = url => fetch(url).then(r => r.json());
 
   const { data, error } = useSWR(
-    "http://api.giphy.com/v1/gifs/random?api_key=RnZwLkJit1FtUYIr0LKTmcavkRzRM4wh&tag=no",
+    "https://api.giphy.com/v1/gifs/random?api_key=RnZwLkJit1FtUYIr0LKTmcavkRzRM4wh&tag=no",
     {
       fetcher
     }
