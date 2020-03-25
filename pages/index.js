@@ -56,7 +56,7 @@ export default function Index() {
           property="og:description"
           content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
         />
-        <meta property="og:image" content="/assets/img/cover.png" />
+        <meta property="og:image" content="/puedosalir.jpg" />
         <meta
           property="og:image:alt"
           content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
@@ -92,8 +92,8 @@ export default function Index() {
         />
         <meta
           name="twitter:image"
-          value="https://puedosalirdecasa.fun/assets/img/-----.png"
-          content="https://puedosalirdecasa.fun/assets/img/-----.png"
+          value="https://puedosalirdecasa.fun/puedosalir.jpg"
+          content="https://puedosalirdecasa.fun/puedosalir.jpg"
         />
         <meta
           name="twitter:summary"
