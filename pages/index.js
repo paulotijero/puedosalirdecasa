@@ -22,8 +22,83 @@ export default function Index() {
       className="mx-auto flex flex-col items-center justify-between"
     >
       <Head>
-        <title>Puedo salir de casa?</title>
+        <title>¿Puedo salir de casa?</title>
         <link rel="icon" href="/question.png" />
+        <meta
+          name="description"
+          content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+        />
+        <meta name="language" content="es" />
+        <meta name="author" content="Paulo Tijero" />
+        <meta
+          name="subject"
+          content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+        />
+        <meta name="pagename" content="¿Puedo salir de casa?" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="black" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="¿Puedo salir de casa?"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta
+          href="/atom.xml"
+          type="application/atom+xml"
+          rel="alternate"
+          title="¿Puedo salir de casa?"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="¿Puedo salir de casa?" />
+        <meta
+          property="og:description"
+          content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+        />
+        <meta property="og:image" content="/assets/img/cover.png" />
+        <meta
+          property="og:image:alt"
+          content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+        />
+        <meta property="og:url" content="https://---.com" />
+        <meta property="og:site_name" content="¿Puedo salir de casa?" />
+        <meta property="og:locale" content="es" />
+        <meta
+          name="twitter:card"
+          value="summary_large_image"
+          content="summary_large_image"
+        />
+        <meta name="twitter:site" value="@paulotijero" content="@paulotijero" />
+        <meta
+          name="twitter:creator"
+          value="@paulotijero"
+          content="@paulotijero"
+        />
+        <meta
+          name="twitter:url"
+          value="https://-----.com"
+          content="https://-----.com"
+        />
+        <meta
+          name="twitter:title"
+          value="¿Puedo salir de casa?"
+          content="¿Puedo salir de casa?"
+        />
+        <meta
+          name="twitter:description"
+          value="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+          content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+        />
+        <meta
+          name="twitter:image"
+          value="https://-----.com/assets/img/desktop.png"
+          content="https://-----.com/assets/img/desktop.png"
+        />
+        <meta
+          name="twitter:summary"
+          content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
+        />
       </Head>
 
       <main className="flex justify-center h-full w-full">
