@@ -1,19 +1,14 @@
 import Head from "next/head";
 import fetch from "isomorphic-unfetch";
 
-export default function Index() {
-  const fetcher = url => fetch(url).then(r => r.json());
+Index.getInitialProps = async function () {
+  const res = await fetch("https://api.giphy.com/v1/gifs/random?api_key=RnZwLkJit1FtUYIr0LKTmcavkRzRM4wh&tag=no");
+  const data = await res.json();
 
-  const { data, error } = useSWR(
-    "https://api.giphy.com/v1/gifs/random?api_key=RnZwLkJit1FtUYIr0LKTmcavkRzRM4wh&tag=no",
-    {
-      fetcher
-    }
-  );
+  return { gif: data.data }
+}
 
-  if (error) return <div>failed to load</div>;
-  if (!data) return <div>loading...</div>;
-  const result = data.data;
+export default function Index({ gif }) {
 
   return (
     <div
@@ -74,8 +69,8 @@ export default function Index() {
         <div className="md:w-6/12 w-11/12 h-4/5 max-w-screen-sm">
           <img
             className="object-contain w-full h-full "
-            src={result.image_original_url}
-            alt={result.title}
+            src={gif.image_original_url}
+            alt={gif.title}
           />
         </div>
       </main>
