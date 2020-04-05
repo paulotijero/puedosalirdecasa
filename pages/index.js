@@ -1,5 +1,5 @@
 import Head from "next/head";
-import fetch from "unfetch";
+import fetch from "isomorphic-unfetch";
 
 export default function Index() {
   const fetcher = url => fetch(url).then(r => r.json());
