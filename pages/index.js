@@ -1,5 +1,4 @@
 import Head from "next/head";
-import useSWR from "swr";
 import fetch from "unfetch";
 
 export default function Index() {
