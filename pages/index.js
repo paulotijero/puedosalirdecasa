@@ -12,7 +12,7 @@ export default function Index({ gif }) {
   return (
     <div
       id="content"
-      className="mx-auto flex flex-col items-center justify-between"
+      className="mx-auto flex flex-col items-center justify-center md:justify-between"
     >
       <Head>
         {/* <!-- Primary Meta Tags --> */}
@@ -34,7 +34,7 @@ export default function Index({ gif }) {
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="black" />
         <meta name="apple-mobile-web-app-title" content="¿Puedo salir de casa?" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta
           href="/atom.xml"
           type="application/atom+xml"
@@ -88,8 +88,8 @@ export default function Index({ gif }) {
         />
       </Head>
 
-      <main className="flex justify-center h-full w-full">
-        <div className="md:w-6/12 w-11/12 h-4/5 max-w-screen-sm">
+      <main className="flex justify-center h-64 w-full md:h-full">
+        <div className="w-11/12 max-w-screen-sm md:w-full">
           <img
             className="object-contain w-full h-full "
             src={gif.image_original_url}
