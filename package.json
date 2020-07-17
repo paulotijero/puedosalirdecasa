@@ -1,7 +1,11 @@
 {
   "name": "puedosalirdecasa",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:paulotijero/puedosalirdecasa.git",
+  "author": "paulotijero <paulotijero@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
