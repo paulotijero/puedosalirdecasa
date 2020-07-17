@@ -2,11 +2,12 @@ import Head from "next/head";
 import fetch from "isomorphic-unfetch";
 
 Index.getInitialProps = async function () {
-  const res = await fetch("https://api.giphy.com/v1/gifs/random?api_key=RnZwLkJit1FtUYIr0LKTmcavkRzRM4wh&tag=no");
+  const res = await fetch(
+    "https://api.giphy.com/v1/gifs/random?api_key=" + process.env.GIPHY_KEY + "&tag=no"
+  );
   const data = await res.json();
-
-  return { gif: data.data }
-}
+  return { gif: data.data };
+};
 
 export default function Index({ gif }) {
   return (
@@ -33,7 +34,10 @@ export default function Index({ gif }) {
         <meta name="MobileOptimized" content="320" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="black" />
-        <meta name="apple-mobile-web-app-title" content="¿Puedo salir de casa?" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="¿Puedo salir de casa?"
+        />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta
           href="/atom.xml"
@@ -49,7 +53,10 @@ export default function Index({ gif }) {
           property="og:description"
           content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
         />
-        <meta property="og:image" content="https://puedosalirdecasa.fun/puedosalirdecasa.jpg" />
+        <meta
+          property="og:image"
+          content="https://puedosalirdecasa.fun/puedosalirdecasa.jpg"
+        />
         <meta
           property="og:image:alt"
           content="¿Puedo salir de casa? La página que te resuelve todas las dudas."
@@ -65,13 +72,21 @@ export default function Index({ gif }) {
           content="summary_large_image"
         />
         <meta name="twitter:site" value="@paulotijero" content="@paulotijero" />
-        <meta name="twitter:creator" value="@paulotijero" content="@paulotijero" />
+        <meta
+          name="twitter:creator"
+          value="@paulotijero"
+          content="@paulotijero"
+        />
         <meta
           name="twitter:url"
           value="https://puedosalirdecasa.fun/"
           content="https://puedosalirdecasa.fun/"
         />
-        <meta name="twitter:title" value="OpenTech" content="¿Puedo salir de casa?" />
+        <meta
+          name="twitter:title"
+          value="OpenTech"
+          content="¿Puedo salir de casa?"
+        />
         <meta
           name="twitter:description"
           value="¿Puedo salir de casa? La página que te resuelve todas las dudas."
