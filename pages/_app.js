@@ -2,7 +2,7 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head"
 
-import "../assets/styles.css";
+import "../assets/application.scss";
 
 export default class CanApp extends App {
   static async getInitialProps({ Component, ctx }) {
