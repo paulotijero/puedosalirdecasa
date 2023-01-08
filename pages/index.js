@@ -2,7 +2,9 @@ import fetch from "isomorphic-unfetch";
 
 Index.getInitialProps = async function () {
   const res = await fetch(
-    "https://api.giphy.com/v1/gifs/random?api_key=" + process.env.GIPHY_KEY + "&tag=no"
+    "https://api.giphy.com/v1/gifs/random?api_key=" +
+      process.env.GIPHY_KEY +
+      "&tag=no"
   );
   const data = await res.json();
   return { gif: data.data };
