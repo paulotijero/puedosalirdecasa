@@ -14,8 +14,8 @@ export default function Index({ gif }) {
       <main className="flex justify-center h-64 w-full md:h-full">
         <div className="w-11/12 max-w-screen-sm md:w-full">
           <img
-            className="object-contain w-full h-full "
-            src={gif.image_original_url}
+            className="object-contain w-full h-full"
+            src={gif.images.original.url}
             alt={gif.title}
           />
         </div>
